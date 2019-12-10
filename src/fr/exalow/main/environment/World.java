@@ -13,11 +13,9 @@ public class World {
     private int borderY;
 
     public World(int x, int y) {
+        this.borderX = x;
+        this.borderY = y;
         this.map = new Cell[x][y];
-    }
-
-    public void initialize() {
-
     }
 
     public int getBorderX() {
@@ -30,10 +28,6 @@ public class World {
 
     public Cell getCell(Point location) {
         return map[location.getX()][location.getY()];
-    }
-
-    public Cell[][] getMap() {
-        return map;
     }
 
     public EntityManager getEntityManager() {

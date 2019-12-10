@@ -17,6 +17,12 @@ public class EntityManager {
         this.entities.remove(animal);
     }
 
+    public long getEntityNumber(Animal animal) {
+        return this.entities.stream()
+                .filter((e) -> e.getClass() == animal.getClass())
+                .count();
+    }
+
     public List<Animal> getEntities() {
         return entities;
     }
