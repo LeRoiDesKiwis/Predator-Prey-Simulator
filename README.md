@@ -1,2 +1,2 @@
-# Prey-Predator
+# Predator-Prey
 A Chicken, Fox, Viper game.
