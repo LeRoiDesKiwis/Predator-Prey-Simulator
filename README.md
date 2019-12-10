@@ -1,2 +1,5 @@
 # Predator-Prey
-A Chicken, Fox, Viper game.
+
+Fox is the predator of Chicken,
+Chicken is the predator of Viper,
+Viper is the predator of Fox.
