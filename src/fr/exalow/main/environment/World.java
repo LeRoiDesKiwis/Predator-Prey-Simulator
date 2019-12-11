@@ -21,7 +21,7 @@ public class World {
     public void print() {
         for (int y = 0; y < map.length; y++) {
             for (int x = 0; x < map[y].length; x++) {
-                System.out.print("[" + map[y][x] + "] ");
+                System.out.print("[" + map[y][x].toString() + "] ");
             }
             System.out.println();
         }

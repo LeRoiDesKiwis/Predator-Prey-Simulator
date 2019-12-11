@@ -31,12 +31,15 @@ public class Cell {
                 return;
             }
         }
-
         animals.add(newAnimal);
-
     }
 
     public void removeAnimal(Animal animal) {
         this.animals.remove(animal);
+    }
+
+    @Override
+    public String toString() {
+        return animals.toString();
     }
 }
