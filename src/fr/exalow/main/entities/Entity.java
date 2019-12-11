@@ -1,11 +1,11 @@
 package fr.exalow.main.entities;
 
-import fr.exalow.main.environment.area.Point;
+import fr.exalow.main.environment.area.Location;
 
 public interface Entity {
 
-    void setLocation(Point location);
+    void setLocation(Location location);
 
-    Point getLocation();
+    Location getLocation();
 
 }

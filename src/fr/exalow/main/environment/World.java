@@ -1,7 +1,7 @@
 package fr.exalow.main.environment;
 
 import fr.exalow.main.environment.area.Cell;
-import fr.exalow.main.environment.area.Point;
+import fr.exalow.main.environment.area.Location;
 import fr.exalow.main.manager.EntityManager;
 
 public class World {
@@ -18,6 +18,15 @@ public class World {
         this.map = new Cell[x][y];
     }
 
+    public void print() {
+        for (int y = 0; y < map.length; y++) {
+            for (int x = 0; x < map[y].length; x++) {
+                System.out.print("[" + map[y][x] + "] ");
+            }
+            System.out.println();
+        }
+    }
+
     public int getBorderX() {
         return borderX;
     }
@@ -26,7 +35,7 @@ public class World {
         return borderY;
     }
 
-    public Cell getCell(Point location) {
+    public Cell getCell(Location location) {
         return map[location.getX()][location.getY()];
     }
 
