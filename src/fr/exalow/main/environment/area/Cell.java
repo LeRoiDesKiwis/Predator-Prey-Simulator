@@ -27,7 +27,6 @@ public class Cell {
 
             if (animal.canEat(newAnimal)) {
                 animal.eat(newAnimal);
-                animal.eat(newAnimal);
                 return;
             }
         }
