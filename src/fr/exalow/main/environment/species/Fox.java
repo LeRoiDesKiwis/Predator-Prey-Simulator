@@ -22,6 +22,7 @@ public class Fox implements Entity, Animal {
 
     @Override
     public void setLocation(Location location) {
+        world.getCell(new Location(this.location.getX(), this.location.getY())).removeAnimal(this);
         world.getCell(new Location(location.getX(), location.getY())).addAnimal(this);
         this.location = location;
     }
